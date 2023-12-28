@@ -24,6 +24,7 @@
 		269F231D2B3D02C700685AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269F23202B3D02C700685AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269F23222B3D02C700685AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269F23282B3D0C0A00685AFF /* AppleLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLogin.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		269F23132B3D02C600685AFF /* AppleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				269F23282B3D0C0A00685AFF /* AppleLogin.entitlements */,
 				269F23142B3D02C600685AFF /* AppDelegate.swift */,
 				269F23162B3D02C600685AFF /* SceneDelegate.swift */,
 				269F23182B3D02C600685AFF /* ViewController.swift */,
@@ -285,8 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppleLogin/AppleLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3U7XS5ZX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppleLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,8 +316,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppleLogin/AppleLogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D3U7XS5ZX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppleLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

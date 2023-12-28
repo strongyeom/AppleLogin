@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,10 +14,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        
+        guard let user = UserDefaults.standard.string(forKey: "User") else {
+            print("NO User")
+            return
+        }
+        
+        // UD에 저장한 데이터를 애플에 물어보기
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        
+        // 인증이 유효한 사용자인지 판별
+        appleIDProvider.getCredentialState(forUserID: user) { credentialState, error in
+            switch credentialState {
+            case .revoked: // 탈퇴
+                print("Revoked")
+            case .authorized: // 인증된 사용자일 경우에만 Main으로
+                DispatchQueue.main.async { // getCredentialState: 백그라운드에서 동장하기 때문에 Main쓰레드에서 동작해야함
+                    let window = UIWindow(windowScene: windowScene)
+                    window.rootViewController = MainViewController()
+                    self.window = window
+                    window.makeKeyAndVisible()
+                }
+            default : print("NOT FOUND")
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
