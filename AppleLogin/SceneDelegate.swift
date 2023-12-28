@@ -26,13 +26,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // UD에 저장한 데이터를 애플에 물어보기
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         
-        // 인증이 유효한 사용자인지 판별
+        // 인증이 유효한 현재 사용자 인증 상태 확인
         appleIDProvider.getCredentialState(forUserID: user) { credentialState, error in
             switch credentialState {
-            case .revoked: // 탈퇴
+            case .revoked: // 인증만료 상태
                 print("Revoked")
             case .authorized: // 인증된 사용자일 경우에만 Main으로
-                DispatchQueue.main.async { // getCredentialState: 백그라운드에서 동장하기 때문에 Main쓰레드에서 동작해야함
+                DispatchQueue.main.async { // getCredentialState: 백그라운드에서 동작하기 때문에 Main쓰레드에서 동작해야함
                     let window = UIWindow(windowScene: windowScene)
                     window.rootViewController = MainViewController()
                     self.window = window
