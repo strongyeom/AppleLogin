@@ -40,7 +40,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func faceIDButtonClicked(_ sender: UIButton) {
-        AuthenticationManager.shared.auth()
+        
+        if AuthenticationManager.shared.checkPolicy() {
+            AuthenticationManager.shared.auth()
+        } else {
+            let alert = UIAlertController(title: "생체 인증을 사용할 수 없습니다.", message: "현재 디바이스는 생체 인증을 지원하지 않습니다.", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "확인", style: .default)
+            alert.addAction(ok)
+            present(alert, animated: true)
+        }
+        
     }
     
     

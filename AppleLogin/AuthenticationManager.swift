@@ -27,12 +27,19 @@ final class AuthenticationManager {
         context.evaluatePolicy(selectedPolicy, localizedReason: "페이스 아이디 인증이 필요합니다.") { result, error in
             // FaceID 결과는 메인 쓰레드 보장 X, DispatchQueue.main.async 필요
             // 인증 성공, 실패
-            print(result)
+            DispatchQueue.main.async {
+                if result {
+                    print("인증 성공")
+                } else {
+                    print("인증 실패")
+                }
+            }
+            
             
             if let error {
                 let code = error._code
                 let laError = LAError(LAError.Code(rawValue: code)!)
-                print(laError)
+                print("인증 에러 발생", laError)
             }
         }
     }
