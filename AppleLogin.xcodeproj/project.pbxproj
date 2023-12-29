@@ -13,6 +13,7 @@
 		269F231C2B3D02C600685AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269F231A2B3D02C600685AFF /* Main.storyboard */; };
 		269F231E2B3D02C700685AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269F231D2B3D02C700685AFF /* Assets.xcassets */; };
 		269F23212B3D02C700685AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269F231F2B3D02C700685AFF /* LaunchScreen.storyboard */; };
+		26B535902B3E635F005C39C5 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B5358F2B3E635F005C39C5 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		269F23202B3D02C700685AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269F23222B3D02C700685AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269F23282B3D0C0A00685AFF /* AppleLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLogin.entitlements; sourceTree = "<group>"; };
+		26B5358F2B3E635F005C39C5 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				269F23162B3D02C600685AFF /* SceneDelegate.swift */,
 				269F23182B3D02C600685AFF /* ViewController.swift */,
 				269F231A2B3D02C600685AFF /* Main.storyboard */,
+				26B5358F2B3E635F005C39C5 /* AuthenticationManager.swift */,
 				269F231D2B3D02C700685AFF /* Assets.xcassets */,
 				269F231F2B3D02C700685AFF /* LaunchScreen.storyboard */,
 				269F23222B3D02C700685AFF /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				269F23192B3D02C600685AFF /* ViewController.swift in Sources */,
+				26B535902B3E635F005C39C5 /* AuthenticationManager.swift in Sources */,
 				269F23152B3D02C600685AFF /* AppDelegate.swift in Sources */,
 				269F23172B3D02C600685AFF /* SceneDelegate.swift in Sources */,
 			);
