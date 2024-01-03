@@ -16,6 +16,13 @@ import AuthenticationServices // 애플 로그인하려면 import해야하는 �
  => 개인 개발자 계정이 있어야 테스트 가능
  */
 
+
+
+/*
+ 1. Build Configuration : Debug Release
+
+ */
+
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +43,21 @@ class ViewController: UIViewController {
         
         
         appleLoginButton.addTarget(self, action: #selector(appleLoginButtonClicked), for: .touchUpInside)
+        
+        // 빌드 셋팅 항목 가져와서 분기처리
+        guard let configuration = Bundle.main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String else {
+            print("configuration info Error")
+            return
+        }
+        
+        if configuration == "com.present.AppleLoginPremium" {
+            view.backgroundColor = .gray
+        } else {
+            view.backgroundColor = .green
+        }
+        
+        
+        
         
     }
     
