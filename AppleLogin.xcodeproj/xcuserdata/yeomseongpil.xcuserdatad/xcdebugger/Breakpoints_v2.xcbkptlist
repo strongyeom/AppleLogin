@@ -14,42 +14,10 @@
             filePath = "AppleLogin/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "authorizationController(controller:didCompleteWithAuthorization:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D09675AB-D2EE-474A-99EF-B5E2ABC565C5 - b874ff51112e6daf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppleLogin.ViewController.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithAuthorization: __C.ASAuthorization) -&gt; ()"
-                  moduleName = "AppleLogin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/12%E1%84%8B%E1%85%AF%E1%86%AF/12.28%20-%20109%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AppleLogin/AppleLogin/AppleLogin/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "170"
-                  endingLineNumber = "170"
-                  offsetFromSymbolStart = "5202">
-               </Location>
-               <Location
-                  uuid = "D09675AB-D2EE-474A-99EF-B5E2ABC565C5 - b874ff51112e6daf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppleLogin.ViewController.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithAuthorization: __C.ASAuthorization) -&gt; ()"
-                  moduleName = "AppleLogin"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/12%E1%84%8B%E1%85%AF%E1%86%AF/12.28%20-%20109%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AppleLogin/AppleLogin/AppleLogin/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "170"
-                  endingLineNumber = "170"
-                  offsetFromSymbolStart = "3983">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

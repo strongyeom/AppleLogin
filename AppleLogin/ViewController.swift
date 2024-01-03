@@ -21,6 +21,9 @@ import AuthenticationServices // 애플 로그인하려면 import해야하는 �
 /*
  1. Build Configuration : Debug Release
 
+ 2. Appstore Reject App CrashLog .txt File
+ 편하게 읽기 위해 확장자를 바꾸기 .txt -> .crash
+ window -> Device And Simulator -> View Console Log -> Open Xcode Project
  */
 
 class MainViewController: UIViewController {
